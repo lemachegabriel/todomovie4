@@ -15,6 +15,11 @@ struct Movie: Decodable{
     var popularity: Double?
 }
 
+struct MoviesSimiliar: Decodable{
+    var page: Int
+    var results: [MovieResults]
+}
+
 struct MovieResults: Decodable, Identifiable, Hashable {
     var idResult: UUID = UUID()
     var id: String?
