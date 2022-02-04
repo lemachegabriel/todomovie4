@@ -31,12 +31,6 @@ struct MovieResults: Decodable, Identifiable, Hashable {
     }
 }
 
-struct MoviesSimiliar: Decodable{
-    var page: Int
-    var results: [MovieResults]
-}
-
-
 struct Geners: Decodable, Identifiable, Hashable {
     var id: Int
     var name: String
@@ -44,4 +38,11 @@ struct Geners: Decodable, Identifiable, Hashable {
 
 struct Genrens: Decodable{
     var genres: [Geners]
+}
+
+struct GeneralData {
+    let PrincipalMovieUrl = "https://api.themoviedb.org/3/movie/550?api_key="
+    let SimilarMovieUrl = "https://api.themoviedb.org/3/movie/550/similar?api_key="
+    let GenreUrl = "https://api.themoviedb.org/3/genre/movie/list?api_key="
+    let apiKey = ProcessInfo.processInfo.environment["apiKey"]
 }

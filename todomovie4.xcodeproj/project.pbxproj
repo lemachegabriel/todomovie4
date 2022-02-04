@@ -12,6 +12,8 @@
 		C07BBA3C27AD8F9C00039385 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C07BBA3B27AD8F9C00039385 /* Assets.xcassets */; };
 		C07BBA3F27AD8F9C00039385 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C07BBA3E27AD8F9C00039385 /* Preview Assets.xcassets */; };
 		C07BBA4727AD901400039385 /* MovieModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07BBA4627AD901300039385 /* MovieModel.swift */; };
+		C07BBA4927ADA25000039385 /* MovieApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07BBA4827ADA25000039385 /* MovieApi.swift */; };
+		C07BBA4C27ADA7CD00039385 /* MovieControllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07BBA4B27ADA7CD00039385 /* MovieControllers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +23,8 @@
 		C07BBA3B27AD8F9C00039385 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C07BBA3E27AD8F9C00039385 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C07BBA4627AD901300039385 /* MovieModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieModel.swift; sourceTree = "<group>"; };
+		C07BBA4827ADA25000039385 /* MovieApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieApi.swift; sourceTree = "<group>"; };
+		C07BBA4B27ADA7CD00039385 /* MovieControllers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieControllers.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +57,7 @@
 		C07BBA3627AD8F9B00039385 /* todomovie4 */ = {
 			isa = PBXGroup;
 			children = (
+				C07BBA4A27ADA79B00039385 /* ViewModel */,
 				C07BBA4527AD8FEA00039385 /* model */,
 				C07BBA3727AD8F9B00039385 /* todomovie4App.swift */,
 				C07BBA3927AD8F9B00039385 /* ContentView.swift */,
@@ -74,8 +79,17 @@
 			isa = PBXGroup;
 			children = (
 				C07BBA4627AD901300039385 /* MovieModel.swift */,
+				C07BBA4827ADA25000039385 /* MovieApi.swift */,
 			);
 			path = model;
+			sourceTree = "<group>";
+		};
+		C07BBA4A27ADA79B00039385 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C07BBA4B27ADA7CD00039385 /* MovieControllers.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,6 +165,8 @@
 				C07BBA4727AD901400039385 /* MovieModel.swift in Sources */,
 				C07BBA3A27AD8F9B00039385 /* ContentView.swift in Sources */,
 				C07BBA3827AD8F9B00039385 /* todomovie4App.swift in Sources */,
+				C07BBA4927ADA25000039385 /* MovieApi.swift in Sources */,
+				C07BBA4C27ADA7CD00039385 /* MovieControllers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
