@@ -16,8 +16,9 @@ final class MovieViewModel: ObservableObject {
     @Published var movie: Movie?
     @Published var movieSimiliar: MoviesSimiliar?
     @Published var isFavorite: Bool = false
+    @Published var isAdded: Bool = false
     
-    var imageName: String { isFavorite ? "heart.fill" : "heart"}
+    var heart: String { isFavorite ? "heart.fill" : "heart"}
     
     private var apiRepository: MovieApi
     

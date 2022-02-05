@@ -14,6 +14,7 @@ struct ContentView: View {
             ScrollView {
                 Color.black.edgesIgnoringSafeArea(.all)
                 Header().environmentObject(viewModel)
+                BodyList().environmentObject(viewModel)
             }.ignoresSafeArea()
             .onAppear {
                 viewModel.fetchPrincipalMovie()

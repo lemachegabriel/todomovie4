@@ -36,7 +36,7 @@ struct Header: View {
                 Button {
                     viewModel.isFavorite.toggle()
                 } label: {
-                    Image(systemName: viewModel.imageName)
+                    Image(systemName: viewModel.heart)
                         .resizable()
                         .frame(width: 20,height: 20)
                         .foregroundColor(.primary)
