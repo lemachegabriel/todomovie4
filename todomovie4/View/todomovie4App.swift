@@ -11,7 +11,8 @@ import SwiftUI
 struct todomovie4App: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(viewModel: MovieViewModel())
+                .preferredColorScheme(.dark)
         }
     }
 }

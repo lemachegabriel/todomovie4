@@ -15,11 +15,13 @@ struct Movie: Decodable{
     var popularity: Double?
 }
 
+// List of all similar movies
 struct MoviesSimiliar: Decodable{
     var page: Int
     var results: [MovieResults]
 }
 
+// Each movie from similar movies
 struct MovieResults: Decodable, Identifiable, Hashable {
     var idResult: UUID = UUID()
     var id: String?
@@ -36,13 +38,15 @@ struct MovieResults: Decodable, Identifiable, Hashable {
     }
 }
 
-struct Geners: Decodable, Identifiable, Hashable {
+// Each genre of all
+struct Genre: Decodable, Identifiable, Hashable {
     var id: Int
     var name: String
 }
 
-struct Genrens: Decodable{
-    var genres: [Geners]
+// List of all genres
+struct Genres: Decodable{
+    var genres: [Genre]
 }
 
 struct GeneralData {

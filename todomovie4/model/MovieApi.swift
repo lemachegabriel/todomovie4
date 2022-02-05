@@ -44,13 +44,13 @@ class MovieApi{
     }
     
     // Get the list of genres and returns to ../ViewModel/MovieControllers
-    func getGeners(completion: @escaping (Genrens) ->()) {
+    func getGenres(completion: @escaping (Genres) ->()) {
         guard let url = URL(string: "\(GeneralData().GenreUrl)\(apiKey)")else{return}
         
         URLSession.shared.dataTask(with: url) { data, res, err in
             
             //Convert response to JSON
-            let geners = try! JSONDecoder().decode(Genrens.self, from: data!)
+            let geners = try! JSONDecoder().decode(Genres.self, from: data!)
             
             //Update UI on the main thread
             DispatchQueue.main.async {

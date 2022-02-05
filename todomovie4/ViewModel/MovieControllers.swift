@@ -8,9 +8,11 @@
 import Foundation
 
 final class MovieViewModel: ObservableObject {
+    
+    // Make these vars visibles for the UI
     @Published var movieSimilarList: [MovieResults] = []
     @Published var movieGeneres: [String] = []
-    @Published var genereList: [Geners] = []
+    @Published var genreList: [Genre] = []
     @Published var movie: Movie?
     @Published var movieSimiliar: MoviesSimiliar?
     @Published var isFavorite: Bool = false
@@ -25,6 +27,14 @@ final class MovieViewModel: ObservableObject {
     
     // MARK: Methods
     
+    // Request principal movie
+    func fetchPrincipalMovie(){
+        apiRepository.getPrincipalMovie() { movie in
+            self.movie = movie
+        }
+    }
+    
+    // Request the principal movie similar list
     func fetchMovieSimilarList() {
         apiRepository.getSimiliarMoviesById() { item in
             item.results.forEach { movies in
@@ -41,24 +51,26 @@ final class MovieViewModel: ObservableObject {
             }
         }
     }
-
-    func fetchGeneres() {
-        apiRepository.getGeners { list in
-            list.genres.forEach { geners in
-                self.genereList.append(Geners(id: geners.id, name: geners.name))
+    
+    // Request the list of all genres
+    func fetchGenres() {
+        apiRepository.getGenres { list in
+            list.genres.forEach { genre in
+                self.genreList.append(Genre(id: genre.id, name: genre.name))
             }
         }
     }
     
+    // Organize genres in 2 for each film in the similar list
     func getGenerers(indexs: [Int]) -> [String] {
-        var arrayGeners: [String] = []
+        var arrayGenres: [String] = []
         indexs.forEach { item in
-            let genero = genereList.filter({$0.id == item }).map({$0.name})
-            if arrayGeners.count < 2 {
-                arrayGeners.append(genero[0])
+            let genero = genreList.filter({$0.id == item }).map({$0.name})
+            if arrayGenres.count < 2 {
+                arrayGenres.append(genero[0])
             }
             return
         }
-        return arrayGeners
+        return arrayGenres
     }
 }
