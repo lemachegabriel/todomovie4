@@ -15,6 +15,7 @@ struct ContentView: View {
                 Color.black.edgesIgnoringSafeArea(.all)
                 Header().environmentObject(viewModel)
                 BodyList().environmentObject(viewModel)
+                Footer().environmentObject(viewModel)
             }.ignoresSafeArea()
             .onAppear {
                 viewModel.fetchPrincipalMovie()
