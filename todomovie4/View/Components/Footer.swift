@@ -22,10 +22,10 @@ struct Footer: View {
                     Text(viewModel.isFavorite ? "Liked" : "Like")
                 }
                 .foregroundColor(viewModel.isFavorite ? .black : .white)
-                .onTapGesture { viewModel.isFavorite.toggle() }
                 .padding(.vertical, 10.0)
                 .padding(.horizontal)
             }
+            .onTapGesture { viewModel.isFavorite.toggle()}
             .padding()
         }
         HStack {
@@ -35,14 +35,15 @@ struct Footer: View {
                         .padding(.vertical, 10.0)
                         .padding(.horizontal)
                         .foregroundColor(checked ? .black : .white)
-                        .onTapGesture { checked.toggle() }
             }
+            .onTapGesture { checked.toggle() }
             .padding(.horizontal)
         }
         HStack {
             Text("Made by Gabriel Castro for the Mobile2You team")
                 .padding(15.0)
                 .multilineTextAlignment(.center)
+                .opacity(0.7)
         }
         Spacer(minLength: 30.0)
     }
