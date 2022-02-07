@@ -12,13 +12,8 @@ struct Header: View {
     @State var heartPositionY: CGFloat = 0
     @State var heartPositionX: CGFloat = 0
     @State var heartOpacity: Double = 1.0
-    private let imageBaseUrl = "https://image.tmdb.org/t/p/original/"
-    
-    internal let imageEffect: LinearGradient = LinearGradient(
-        gradient: Gradient(colors: [Color.black,Color.clear]),
-        startPoint: .center, endPoint: .bottom
-    )
-    
+    let imageBaseUrl = "https://image.tmdb.org/t/p/original/"
+
     func TapHeart(){
         viewModel.isFavorite.toggle()
         
@@ -35,12 +30,7 @@ struct Header: View {
     
     var body: some View {
         VStack(){
-            //Principal movie Image
-            Image(uiImage: "\(imageBaseUrl)\(viewModel.movie?.poster_path ?? "")".load())
-                .resizable()
-                .scaledToFit()
-                .padding(.top, -20)
-                .mask(imageEffect)
+            PrincipalImage(urlString: "\(imageBaseUrl)\(viewModel.movie?.poster_path ?? "")")
             HStack {
                 //Principal movie name
                 Text(viewModel.movie?.original_title ?? "").foregroundColor(.primary)

@@ -11,12 +11,12 @@ struct ContentView: View {
     @ObservedObject var viewModel: MovieViewModel
     
     var body: some View {
-            ScrollView {
+        ScrollView(.vertical, showsIndicators: false, content: {
                 Color.black.edgesIgnoringSafeArea(.all)
                 Header().environmentObject(viewModel)
                 BodyList().environmentObject(viewModel)
                 Footer().environmentObject(viewModel)
-            }.ignoresSafeArea()
+            }).ignoresSafeArea()
             .onAppear {
                 viewModel.fetchPrincipalMovie()
                 viewModel.fetchMovieSimilarList()

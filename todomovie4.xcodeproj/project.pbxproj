@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C01C601427B08C1B00C3AC83 /* PrincipalImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01C601327B08C1B00C3AC83 /* PrincipalImage.swift */; };
+		C01C601627B08FA300C3AC83 /* ImageControllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01C601527B08FA300C3AC83 /* ImageControllers.swift */; };
 		C07BBA3827AD8F9B00039385 /* todomovie4App.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07BBA3727AD8F9B00039385 /* todomovie4App.swift */; };
 		C07BBA3A27AD8F9B00039385 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07BBA3927AD8F9B00039385 /* ContentView.swift */; };
 		C07BBA3C27AD8F9C00039385 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C07BBA3B27AD8F9C00039385 /* Assets.xcassets */; };
@@ -22,6 +24,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C01C601327B08C1B00C3AC83 /* PrincipalImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrincipalImage.swift; sourceTree = "<group>"; };
+		C01C601527B08FA300C3AC83 /* ImageControllers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageControllers.swift; sourceTree = "<group>"; };
 		C07BBA3427AD8F9B00039385 /* todomovie4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = todomovie4.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C07BBA3727AD8F9B00039385 /* todomovie4App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = todomovie4App.swift; sourceTree = "<group>"; };
 		C07BBA3927AD8F9B00039385 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -98,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				C07BBA4B27ADA7CD00039385 /* MovieControllers.swift */,
+				C01C601527B08FA300C3AC83 /* ImageControllers.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -127,6 +132,7 @@
 				C07BBA5427AE08BB00039385 /* BodyList.swift */,
 				C07BBA5627AE09FD00039385 /* BodyListItem.swift */,
 				C07BBA5827AE123D00039385 /* Footer.swift */,
+				C01C601327B08C1B00C3AC83 /* PrincipalImage.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -201,6 +207,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C01C601427B08C1B00C3AC83 /* PrincipalImage.swift in Sources */,
+				C01C601627B08FA300C3AC83 /* ImageControllers.swift in Sources */,
 				C07BBA4727AD901400039385 /* MovieModel.swift in Sources */,
 				C07BBA5027ADC3CE00039385 /* Extensions.swift in Sources */,
 				C07BBA3A27AD8F9B00039385 /* ContentView.swift in Sources */,

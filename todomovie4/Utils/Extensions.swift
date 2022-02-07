@@ -15,7 +15,6 @@ extension Double {
     }
 }
 
-
 extension String{
     func load()->UIImage{
         do{
@@ -30,5 +29,18 @@ extension String{
             //Add error
         }
         return UIImage()
+    }
+}
+
+extension View{
+    func getRect() -> CGRect{
+        return UIScreen.main.bounds
+    }
+}
+
+extension ImageCache {
+    private static var imageCache = ImageCache()
+    static func getImageCache() -> ImageCache {
+        return imageCache
     }
 }
