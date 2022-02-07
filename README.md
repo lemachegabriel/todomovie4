@@ -25,7 +25,7 @@ Foi utilizado a API [The Movie Database](https://www.themoviedb.org/) para traze
 
 - Rode esse comando no seu terminal `gitclone git@github.com:lemachegabriel/todomovie4.git` para clonar o repositório
 - Abra o arquivo `todomovie4.xcodeporj`.
-- Isira sua `ApiKey` nas variáveis ambiente. (NÃO SE ESQUEÇA)
+- Isira sua `apiKey` nas variáveis ambiente com o nome de: `apiKey`. (NÃO SE ESQUEÇA)
 - Pronto agora só rodar!!!!!!
 
 ## Resultado final
