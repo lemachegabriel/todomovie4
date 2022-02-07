@@ -14,15 +14,18 @@ Foi utilizado a API [The Movie Database](https://www.themoviedb.org/) para traze
 - Todas as chamdas na API foram feitas em `/model/MovieApi`.
 - A ligação entre `View` e `model` foram feitas no arquivo `/ViewModel/MovieControllers`.
 - Na pasta `/Utils` estão algumas extensions para facilitar a utilização de Strings e Images.
+- No arquivo `/View/Components/PrincipalImage` adicionei a animação da imagem principal, achei necessário salvar a imagem em cache pois para animala usei um
+`GeometryReader`e ele ficava chamando toda hora a api, isso foi feito em `/ViemModel/ImageControllers`.
 
 
-<img width="260" alt="Screen Shot 2022-02-05 at 11 11 02" src="https://user-images.githubusercontent.com/69813312/152645468-71eddb86-3133-41c0-89f0-d9ce9a0e23fa.png">
+<img width="248" alt="Screen Shot 2022-02-07 at 00 16 51" src="https://user-images.githubusercontent.com/69813312/152719158-97eddddc-481d-4673-b58a-09e64cb14ade.png">
+
 
 ## Como rodar
 
 - Rode esse comando no seu terminal `gitclone git@github.com:lemachegabriel/todomovie4.git` para clonar o repositório
 - Abra o arquivo `todomovie4.xcodeporj`.
-- Isira sua ApiKey nas variáveis ambiente.
+- Isira sua `ApiKey` nas variáveis ambiente. (NÃO SE ESQUEÇA)
 - Pronto agora só rodar!!!!!!
 
 ## Resultado final
