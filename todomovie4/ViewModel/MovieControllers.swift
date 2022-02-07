@@ -67,11 +67,13 @@ final class MovieViewModel: ObservableObject {
         var arrayGenres: [String] = []
         indexs.forEach { item in
             let genero = genreList.filter({$0.id == item }).map({$0.name})
-            if arrayGenres.count == indexs.count{
+            if arrayGenres.count == indexs.count {
                 return
             }
             if arrayGenres.count < 2 {
-                arrayGenres.append(genero[0])
+                if(genero.count > 0){
+                    arrayGenres.append(genero[0])
+                }
             }
             return
         }
