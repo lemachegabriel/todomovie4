@@ -34,9 +34,3 @@ Foi utilizado a API [The Movie Database](https://www.themoviedb.org/) para traze
 <img width="410" alt="Screen Shot 2022-02-05 at 11 07 36" src="https://user-images.githubusercontent.com/69813312/152652015-95c0f35c-6c06-4e93-9489-3116b506249f.png">
 
 
-
-## Para o time Mobile2You.
-
-Antes de verem o projeto queria agradecer pela oportunidade de participar desse processo seletivo, confesso que tive algumas dificuldades ao 
-realizar essa tarefa, porém acredito que conquistei uma enorme evolução ao final do mesmo, percebi que ainda tenho muito a aprender e espero que possa
-ser junto de vocês. Aguardo ansiosamente pelo feedback!
